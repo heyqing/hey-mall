@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>top.heyqing</groupId>
+        <artifactId>hey-mall</artifactId>
+        <version>v1.0.0</version>
+    </parent>
+    <artifactId>hey-mall-portal</artifactId>
+    <name>hey-mall-portal</name>
+    <description>嗨猫前台系统</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>top.heyqing</groupId>
+            <artifactId>hey-mall-mbg</artifactId>
+            <version>v1.0.0</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.macro.mall</groupId>-->
+<!--            <artifactId>mall-security</artifactId>-->
+<!--        </dependency>-->
+        <!--mongodb依赖配置-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+        <!--redis依赖配置-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <!--集成消息队列-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+        <!--支付宝支付Java SDK-->
+        <dependency>
+            <groupId>com.alipay.sdk</groupId>
+            <artifactId>alipay-sdk-java</artifactId>
+            <version>${alipay-sdk.version}</version>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>io.fabric8</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
