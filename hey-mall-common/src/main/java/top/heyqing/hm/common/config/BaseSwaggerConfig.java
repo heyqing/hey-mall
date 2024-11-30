@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * ClassName:SwaggerConfig
+ * ClassName:BaseSwaggerConfig
  * Package:top.heyqing.hm.common.config
  * Description:
  * Swagger 配置类
@@ -30,7 +30,7 @@ import java.util.stream.Collectors;
  * @Date:2024/11/27
  * @Author:Heyqing
  */
-public abstract class SwaggerConfig {
+public abstract class BaseSwaggerConfig {
 
     @Bean
     public Docket createRestApi() {
@@ -87,7 +87,7 @@ public abstract class SwaggerConfig {
         return result;
     }
 
-    public BeanPostProcessor generateBeanPostProcessor(){
+    public BeanPostProcessor generateBeanPostProcessor() {
         return new BeanPostProcessor() {
 
             @Override

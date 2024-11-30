@@ -13,11 +13,11 @@ import top.heyqing.hm.common.responce.RCode;
  */
 public class Asserts {
 
-    public static void error(String message) {
+    public static void fail(String message) {
         throw new CustomizeException(message);
     }
 
-    public static void error(RCode error) {
+    public static void fail(RCode error) {
         throw new CustomizeException(error);
     }
 

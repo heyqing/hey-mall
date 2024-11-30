@@ -1,5 +1,11 @@
 package top.heyqing.hm.portal.dao;
 
+import org.apache.ibatis.annotations.Param;
+import top.heyqing.hm.mbg.model.CmsSubject;
+import top.heyqing.hm.mbg.model.PmsBrand;
+import top.heyqing.hm.mbg.model.PmsProduct;
+import top.heyqing.hm.portal.domain.FlashPromotionProduct;
+
 import java.util.List;
 
 /**
@@ -26,7 +32,7 @@ public interface HomeDao {
     /**
      * 获取新品推荐
      */
-    List<PmsProduct> getNewProductList(@Param("offset") Integer offset,@Param("limit") Integer limit);
+    List<PmsProduct> getNewProductList(@Param("offset") Integer offset, @Param("limit") Integer limit);
     /**
      * 获取人气推荐
      */
