@@ -16,10 +16,11 @@
             <artifactId>hey-mall-mbg</artifactId>
             <version>v1.0.0</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.macro.mall</groupId>-->
-<!--            <artifactId>mall-security</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>top.heyqing</groupId>
+            <artifactId>hey-mall-security</artifactId>
+            <version>v1.0.0</version>
+        </dependency>
         <!--mongodb依赖配置-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

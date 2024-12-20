@@ -17,7 +17,7 @@ spring:
         login-password: druid
   data:
     mongodb:
-      host: localhost
+      host: 140.143.94.95
       port: 27017
       database: mall-port
   redis:
