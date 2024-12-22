@@ -11,6 +11,7 @@
         <module>hey-mall-mbg</module>
         <module>hey-mall-security</module>
         <module>hey-mall-admin</module>
+        <module>hey-mall-search</module>
     </modules>
     <packaging>pom</packaging>
     <description>Hey-Mall | 嗨猫 | 购物平台</description>
